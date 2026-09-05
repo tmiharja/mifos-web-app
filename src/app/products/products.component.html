@@ -12,14 +12,14 @@
               <fa-icon
                 (click)="arrowBooleansToggle(0); $event.stopPropagation()"
                 *ngIf="!arrowBooleans[0]"
-                style="z-index: 1000"
+                class="toggle-arrow"
                 icon="arrow-down"
                 size="md"
               ></fa-icon>
               <fa-icon
                 (click)="arrowBooleansToggle(0); $event.stopPropagation()"
                 *ngIf="arrowBooleans[0]"
-                style="z-index: 1000"
+                class="toggle-arrow"
                 icon="arrow-up"
                 size="md"
               ></fa-icon>
