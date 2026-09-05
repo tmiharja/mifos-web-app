@@ -1,0 +1,71 @@
+[
+  {
+    "id": 1,
+    "name": "Cash",
+    "parentId": null,
+    "glCode": "10100",
+    "disabled": false,
+    "manualEntriesAllowed": true,
+    "type": {
+      "id": 1,
+      "code": "accountType.asset",
+      "value": "ASSET"
+    },
+    "usage": {
+      "id": 1,
+      "code": "accountUsage.detail",
+      "value": "DETAIL"
+    },
+    "description": "Cash on hand",
+    "nameDecorated": "Cash",
+    "tagId": {
+      "id": 0
+    }
+  },
+  {
+    "id": 2,
+    "name": "Loan Portfolio",
+    "parentId": null,
+    "glCode": "10200",
+    "disabled": false,
+    "manualEntriesAllowed": true,
+    "type": {
+      "id": 1,
+      "code": "accountType.asset",
+      "value": "ASSET"
+    },
+    "usage": {
+      "id": 1,
+      "code": "accountUsage.detail",
+      "value": "DETAIL"
+    },
+    "description": "Loans outstanding",
+    "nameDecorated": "Loan Portfolio",
+    "tagId": {
+      "id": 0
+    }
+  },
+  {
+    "id": 3,
+    "name": "Interest Income",
+    "parentId": null,
+    "glCode": "40100",
+    "disabled": false,
+    "manualEntriesAllowed": true,
+    "type": {
+      "id": 4,
+      "code": "accountType.income",
+      "value": "INCOME"
+    },
+    "usage": {
+      "id": 1,
+      "code": "accountUsage.detail",
+      "value": "DETAIL"
+    },
+    "description": "Interest earned",
+    "nameDecorated": "Interest Income",
+    "tagId": {
+      "id": 0
+    }
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Cash",
+    "description": "Cash",
+    "isCashPayment": true,
+    "position": 1,
+    "isSystemDefined": false
+  },
+  {
+    "id": 2,
+    "name": "Cheque",
+    "description": "Cheque",
+    "isCashPayment": false,
+    "position": 2,
+    "isSystemDefined": false
+  }
+]

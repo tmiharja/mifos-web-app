@@ -1,0 +1,48 @@
+{
+  "activationDate": [
+    2024,
+    1,
+    15
+  ],
+  "officeId": 1,
+  "isAddressEnabled": false,
+  "officeOptions": [
+    { "id": 1, "name": "Head Office", "nameDecorated": "Head Office" },
+    { "id": 2, "name": "Branch Office", "nameDecorated": "....Branch Office" }
+  ],
+  "staffOptions": [
+    {
+      "id": 1,
+      "firstname": "Alice",
+      "lastname": "Officer",
+      "displayName": "Officer, Alice",
+      "officeId": 1,
+      "officeName": "Head Office",
+      "isLoanOfficer": true,
+      "isActive": true
+    }
+  ],
+  "savingProductOptions": [
+    { "id": 1, "name": "Passbook Savings", "withdrawalFeeForTransfers": false, "allowOverdraft": false }],
+  "genderOptions": [
+    { "id": 22, "name": "Female", "position": 0, "description": "", "active": true, "mandatory": false },
+    { "id": 24, "name": "Male", "position": 0, "description": "", "active": true, "mandatory": false }
+  ],
+  "clientTypeOptions": [{ "id": 25, "name": "Individual", "position": 0, "active": true, "mandatory": false }],
+  "clientClassificationOptions": [{ "id": 27, "name": "Regular", "position": 0, "active": true, "mandatory": false }],
+  "clientNonPersonConstitutionOptions": [
+    { "id": 30, "name": "Limited company", "position": 0, "active": true, "mandatory": false }],
+  "clientNonPersonMainBusinessLineOptions": [
+    { "id": 31, "name": "Retail", "position": 0, "active": true, "mandatory": false }],
+  "clientLegalFormOptions": [
+    { "id": 1, "code": "legalFormType.person", "value": "PERSON" },
+    { "id": 2, "code": "legalFormType.entity", "value": "ENTITY" }
+  ],
+  "familyMemberOptions": {
+    "relationshipIdOptions": [{ "id": 40, "name": "Spouse", "active": true, "mandatory": false }],
+    "genderIdOptions": [{ "id": 22, "name": "Female", "active": true, "mandatory": false }],
+    "maritalStatusIdOptions": [{ "id": 41, "name": "Married", "active": true, "mandatory": false }],
+    "professionIdOptions": [{ "id": 42, "name": "Teacher", "active": true, "mandatory": false }]
+  },
+  "datatables": []
+}

@@ -1,0 +1,43 @@
+{
+  "globalConfiguration": [
+    {
+      "id": 1,
+      "name": "maker-checker",
+      "enabled": false,
+      "trapDoor": false
+    },
+    {
+      "id": 4,
+      "name": "amazon-S3",
+      "enabled": false,
+      "trapDoor": false
+    },
+    {
+      "id": 40,
+      "name": "enable-business-date",
+      "value": 0,
+      "enabled": false,
+      "trapDoor": false
+    },
+    {
+      "id": 41,
+      "name": "enable-automatic-cob-date-adjustment",
+      "value": 0,
+      "enabled": true,
+      "trapDoor": false
+    },
+    {
+      "id": 50,
+      "name": "report-export-s3-folder-name",
+      "stringValue": "",
+      "enabled": false,
+      "trapDoor": false
+    },
+    {
+      "id": 7,
+      "name": "allow-transactions-on-holiday",
+      "enabled": false,
+      "trapDoor": false
+    }
+  ]
+}

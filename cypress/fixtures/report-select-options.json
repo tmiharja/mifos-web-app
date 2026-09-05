@@ -1,0 +1,24 @@
+{
+  "columnHeaders": [
+    {
+      "columnName": "id"
+    },
+    {
+      "columnName": "name"
+    }
+  ],
+  "data": [
+    {
+      "row": [
+        1,
+        "Head Office"
+      ]
+    },
+    {
+      "row": [
+        2,
+        "Branch Office"
+      ]
+    }
+  ]
+}

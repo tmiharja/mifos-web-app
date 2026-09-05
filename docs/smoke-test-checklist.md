@@ -12,6 +12,23 @@ Record the result of each hop in the PR description:
 
 Mark every row below as pass/fail. Any failure blocks the hop until fixed.
 
+## Automated counterpart
+
+Sections 1-8 are mirrored by the Cypress suite under `cypress/e2e/` (`login`,
+`clients`, `loans`, `savings`, `accounting`, `reports`, `system`, `i18n`). It
+runs against a static production build with the Fineract API stubbed via
+`cy.intercept`, so it needs no backend and runs in CI (`Tests / Cypress e2e`
+in `.github/workflows/test.yml`). Locally:
+
+```bash
+npm run build
+python3 -m http.server 4200 --directory dist/web-app &
+npm run cypress:run        # or: npm run cypress:open
+```
+
+The automated suite catches layout/Material regressions early; this manual
+checklist remains the gate against a real backend.
+
 ## 0. Boot
 
 - [ ] `npm start` compiles with no errors and no new console warnings.

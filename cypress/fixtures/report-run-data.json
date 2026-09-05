@@ -1,0 +1,44 @@
+{
+  "columnHeaders": [
+    {
+      "columnName": "Office/Branch",
+      "columnType": "VARCHAR",
+      "columnDisplayType": "STRING",
+      "isColumnNullable": false,
+      "isColumnPrimaryKey": false,
+      "columnValues": []
+    },
+    {
+      "columnName": "Client Name",
+      "columnType": "VARCHAR",
+      "columnDisplayType": "STRING",
+      "isColumnNullable": false,
+      "isColumnPrimaryKey": false,
+      "columnValues": []
+    },
+    {
+      "columnName": "Loan Officer",
+      "columnType": "VARCHAR",
+      "columnDisplayType": "STRING",
+      "isColumnNullable": true,
+      "isColumnPrimaryKey": false,
+      "columnValues": []
+    }
+  ],
+  "data": [
+    {
+      "row": [
+        "Head Office",
+        "Jane Doe",
+        "Officer, Alice"
+      ]
+    },
+    {
+      "row": [
+        "Head Office",
+        "John Smith",
+        "Officer, Alice"
+      ]
+    }
+  ]
+}

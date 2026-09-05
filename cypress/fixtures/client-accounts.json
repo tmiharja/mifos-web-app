@@ -1,0 +1,108 @@
+{
+  "loanAccounts": [
+    {
+      "id": 1,
+      "accountNo": "000000001",
+      "productId": 1,
+      "productName": "Personal Loan",
+      "shortProductName": "PL",
+      "status": {
+        "id": 300,
+        "code": "loanStatusType.active",
+        "value": "Active",
+        "pendingApproval": false,
+        "waitingForDisbursal": false,
+        "active": true,
+        "closedObligationsMet": false,
+        "closedWrittenOff": false,
+        "closedRescheduled": false,
+        "closed": false,
+        "overpaid": false
+      },
+      "loanType": { "id": 1, "code": "accountType.individual", "value": "Individual" },
+      "loanCycle": 1,
+      "timeline": { "submittedOnDate": [
+          2024,
+          2,
+          1
+        ], "actualDisbursementDate": [
+          2024,
+          2,
+          5
+        ], "expectedMaturityDate": [
+          2025,
+          2,
+          5
+        ] },
+      "inArrears": false,
+      "originalLoan": 10000.0,
+      "loanBalance": 8000.0,
+      "amountPaid": 2000.0,
+      "currency": {
+        "code": "USD",
+        "name": "US Dollar",
+        "decimalPlaces": 2,
+        "displaySymbol": "$",
+        "nameCode": "currency.USD",
+        "displayLabel": "US Dollar ($)"
+      }
+    }
+  ],
+  "savingsAccounts": [
+    {
+      "id": 1,
+      "accountNo": "000000001",
+      "productId": 1,
+      "productName": "Passbook Savings",
+      "shortProductName": "PS",
+      "status": {
+        "id": 300,
+        "code": "savingsAccountStatusType.active",
+        "value": "Active",
+        "submittedAndPendingApproval": false,
+        "approved": false,
+        "rejected": false,
+        "withdrawnByApplicant": false,
+        "active": true,
+        "closed": false,
+        "prematureClosed": false,
+        "transferInProgress": false,
+        "transferOnHold": false,
+        "matured": false
+      },
+      "currency": {
+        "code": "USD",
+        "name": "US Dollar",
+        "decimalPlaces": 2,
+        "displaySymbol": "$",
+        "nameCode": "currency.USD",
+        "displayLabel": "US Dollar ($)"
+      },
+      "accountBalance": 1500.0,
+      "accountType": { "id": 1, "code": "accountType.individual", "value": "Individual" },
+      "timeline": { "submittedOnDate": [
+          2024,
+          1,
+          20
+        ], "activatedOnDate": [
+          2024,
+          1,
+          20
+        ] },
+      "subStatus": {
+        "id": 0,
+        "code": "SavingsAccountSubStatusEnum.none",
+        "value": "None",
+        "none": true,
+        "inactive": false,
+        "dormant": false,
+        "escheat": false,
+        "block": false,
+        "blockCredit": false,
+        "blockDebit": false
+      },
+      "depositType": { "id": 100, "code": "depositAccountType.savingsDeposit", "value": "Savings" }
+    }
+  ],
+  "shareAccounts": []
+}

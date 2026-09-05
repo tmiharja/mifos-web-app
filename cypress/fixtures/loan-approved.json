@@ -1,0 +1,273 @@
+{
+  "id": 2,
+  "accountNo": "000000002",
+  "externalId": "LN-002",
+  "status": {
+    "id": 200,
+    "code": "loanStatusType.approved",
+    "value": "Approved",
+    "pendingApproval": false,
+    "waitingForDisbursal": true,
+    "active": false,
+    "closedObligationsMet": false,
+    "closedWrittenOff": false,
+    "closedRescheduled": false,
+    "closed": false,
+    "overpaid": false
+  },
+  "clientId": 1,
+  "clientAccountNo": "000000001",
+  "clientName": "Jane Doe",
+  "clientOfficeId": 1,
+  "loanProductId": 1,
+  "loanProductName": "Personal Loan",
+  "loanProductDescription": "Standard personal loan",
+  "isLoanProductLinkedToFloatingRate": false,
+  "fundId": 1,
+  "fundName": "General fund",
+  "loanPurposeId": 50,
+  "loanPurposeName": "Working capital",
+  "loanOfficerId": 1,
+  "loanOfficerName": "Officer, Alice",
+  "loanType": {
+    "id": 1,
+    "code": "accountType.individual",
+    "value": "Individual"
+  },
+  "currency": {
+    "code": "USD",
+    "name": "US Dollar",
+    "decimalPlaces": 2,
+    "inMultiplesOf": 0,
+    "displaySymbol": "$",
+    "nameCode": "currency.USD",
+    "displayLabel": "US Dollar ($)"
+  },
+  "principal": 10000.0,
+  "approvedPrincipal": 10000.0,
+  "proposedPrincipal": 10000.0,
+  "netDisbursalAmount": 10000.0,
+  "termFrequency": 12,
+  "termPeriodFrequencyType": {
+    "id": 2,
+    "code": "termFrequency.periodFrequencyType.months",
+    "value": "Months"
+  },
+  "numberOfRepayments": 12,
+  "repaymentEvery": 1,
+  "repaymentFrequencyType": {
+    "id": 2,
+    "code": "repaymentFrequency.periodFrequencyType.months",
+    "value": "Months"
+  },
+  "interestRatePerPeriod": 12.0,
+  "interestRateFrequencyType": {
+    "id": 3,
+    "code": "interestRateFrequency.periodFrequencyType.years",
+    "value": "Per year"
+  },
+  "annualInterestRate": 12.0,
+  "isFloatingInterestRate": false,
+  "amortizationType": {
+    "id": 1,
+    "code": "amortizationType.equal.installments",
+    "value": "Equal installments"
+  },
+  "interestType": {
+    "id": 0,
+    "code": "interestType.declining.balance",
+    "value": "Declining Balance"
+  },
+  "interestCalculationPeriodType": {
+    "id": 1,
+    "code": "interestCalculationPeriodType.same.as.repayment.period",
+    "value": "Same as repayment period"
+  },
+  "allowPartialPeriodInterestCalculation": false,
+  "transactionProcessingStrategyCode": "mifos-standard-strategy",
+  "transactionProcessingStrategyName": "Penalties, Fees, Interest, Principal order",
+  "loanScheduleType": {
+    "code": "CUMULATIVE",
+    "value": "Cumulative"
+  },
+  "loanScheduleProcessingType": {
+    "code": "HORIZONTAL",
+    "value": "Horizontal"
+  },
+  "daysInMonthType": {
+    "id": 1,
+    "code": "DaysInMonthType.actual",
+    "value": "Actual"
+  },
+  "daysInYearType": {
+    "id": 1,
+    "code": "DaysInYearType.actual",
+    "value": "Actual"
+  },
+  "timeline": {
+    "submittedOnDate": [
+      2024,
+      2,
+      1
+    ],
+    "submittedByUsername": "mifos",
+    "submittedByFirstname": "App",
+    "submittedByLastname": "Administrator",
+    "expectedDisbursementDate": [
+      2024,
+      2,
+      5
+    ],
+    "expectedMaturityDate": [
+      2025,
+      2,
+      5
+    ],
+    "approvedOnDate": [
+      2024,
+      2,
+      2
+    ],
+    "approvedByUsername": "mifos",
+    "approvedByFirstname": "App",
+    "approvedByLastname": "Administrator"
+  },
+  "summary": {
+    "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "decimalPlaces": 2,
+      "inMultiplesOf": 0,
+      "displaySymbol": "$",
+      "nameCode": "currency.USD",
+      "displayLabel": "US Dollar ($)"
+    },
+    "principalDisbursed": 0,
+    "principalPaid": 0,
+    "principalAdjustments": 0,
+    "principalWrittenOff": 0,
+    "principalOutstanding": 0,
+    "principalOverdue": 0,
+    "interestCharged": 0,
+    "interestPaid": 0,
+    "interestWaived": 0,
+    "interestWrittenOff": 0,
+    "interestOutstanding": 0,
+    "interestOverdue": 0,
+    "feeChargesCharged": 0,
+    "feeChargesDueAtDisbursementCharged": 0,
+    "feeChargesPaid": 0,
+    "feeChargesWaived": 0,
+    "feeChargesWrittenOff": 0,
+    "feeChargesOutstanding": 0,
+    "feeChargesOverdue": 0,
+    "penaltyChargesCharged": 0,
+    "penaltyChargesPaid": 0,
+    "penaltyChargesWaived": 0,
+    "penaltyChargesWrittenOff": 0,
+    "penaltyChargesOutstanding": 0,
+    "penaltyChargesOverdue": 0,
+    "totalExpectedRepayment": 10661.85,
+    "totalRepayment": 0,
+    "totalExpectedCostOfLoan": 661.85,
+    "totalCostOfLoan": 0,
+    "totalWaived": 0,
+    "totalWrittenOff": 0,
+    "totalOutstanding": 0,
+    "totalOverdue": 0,
+    "totalRecovered": 0
+  },
+  "repaymentSchedule": {
+    "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "decimalPlaces": 2,
+      "inMultiplesOf": 0,
+      "displaySymbol": "$",
+      "nameCode": "currency.USD",
+      "displayLabel": "US Dollar ($)"
+    },
+    "loanTermInDays": 365,
+    "totalPrincipalDisbursed": 10000.0,
+    "totalPrincipalExpected": 10000.0,
+    "totalPrincipalPaid": 0,
+    "totalInterestCharged": 661.85,
+    "totalFeeChargesCharged": 0,
+    "totalPenaltyChargesCharged": 0,
+    "totalWaived": 0,
+    "totalWrittenOff": 0,
+    "totalRepaymentExpected": 10661.85,
+    "totalRepayment": 0,
+    "totalPaidInAdvance": 0,
+    "totalPaidLate": 0,
+    "totalOutstanding": 10661.85,
+    "periods": [
+      {
+        "period": 1,
+        "fromDate": [
+          2024,
+          2,
+          5
+        ],
+        "dueDate": [
+          2024,
+          3,
+          5
+        ],
+        "daysInPeriod": 29,
+        "principalOriginalDue": 788.49,
+        "principalDue": 788.49,
+        "principalOutstanding": 788.49,
+        "principalLoanBalanceOutstanding": 9211.51,
+        "interestOriginalDue": 100.0,
+        "interestDue": 100.0,
+        "interestOutstanding": 100.0,
+        "feeChargesDue": 0,
+        "penaltyChargesDue": 0,
+        "totalOriginalDueForPeriod": 888.49,
+        "totalDueForPeriod": 888.49,
+        "totalOutstandingForPeriod": 888.49,
+        "totalActualCostOfLoanForPeriod": 100.0,
+        "totalInstallmentAmountForPeriod": 888.49,
+        "complete": false
+      }
+    ]
+  },
+  "transactions": [],
+  "charges": [],
+  "collateral": [],
+  "overdueCharges": [],
+  "loanTermVariations": [],
+  "multiDisburseLoan": false,
+  "canDisburse": true,
+  "canDefineInstallmentAmount": false,
+  "canUseForTopup": false,
+  "isTopup": false,
+  "fraud": false,
+  "chargedOff": false,
+  "isInterestRecalculationEnabled": false,
+  "isEqualAmortization": false,
+  "isVariableInstallmentsAllowed": false,
+  "isRatesEnabled": false,
+  "inArrears": false,
+  "isNPA": false,
+  "enableInstallmentLevelDelinquency": false,
+  "disallowExpectedDisbursements": false,
+  "interestRecognitionOnDisbursementDate": false,
+  "inArrearsTolerance": 0,
+  "graceOnPrincipalPayment": 0,
+  "graceOnInterestPayment": 0,
+  "graceOnArrearsAgeing": 0,
+  "graceOnInterestCharged": 0,
+  "delinquent": {
+    "availableDisbursementAmount": 10000.0,
+    "pastDueDays": 0,
+    "delinquentDays": 0,
+    "delinquentAmount": 0,
+    "lastPaymentAmount": 0,
+    "lastRepaymentAmount": 0,
+    "delinquencyPausePeriods": [],
+    "installmentLevelDelinquency": []
+  },
+  "totalOverpaid": 0
+}

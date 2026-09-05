@@ -1,0 +1,18 @@
+{
+  "approvalDate": [
+    2024,
+    2,
+    2
+  ],
+  "approvalAmount": 10000.0,
+  "netDisbursalAmount": 10000.0,
+  "currency": {
+    "code": "USD",
+    "name": "US Dollar",
+    "decimalPlaces": 2,
+    "inMultiplesOf": 0,
+    "displaySymbol": "$",
+    "nameCode": "currency.USD",
+    "displayLabel": "US Dollar ($)"
+  }
+}

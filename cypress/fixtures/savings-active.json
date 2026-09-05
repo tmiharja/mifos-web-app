@@ -1,0 +1,197 @@
+{
+  "id": 3,
+  "accountNo": "000000003",
+  "depositType": {
+    "id": 100,
+    "code": "depositAccountType.savingsDeposit",
+    "value": "Savings"
+  },
+  "clientId": 1,
+  "clientName": "Jane Doe",
+  "savingsProductId": 1,
+  "savingsProductName": "Passbook Savings",
+  "fieldOfficerId": 1,
+  "fieldOfficerName": "Officer, Alice",
+  "status": {
+    "id": 300,
+    "code": "savingsAccountStatusType.active",
+    "value": "Active",
+    "submittedAndPendingApproval": false,
+    "approved": false,
+    "rejected": false,
+    "withdrawnByApplicant": false,
+    "active": true,
+    "closed": false,
+    "prematureClosed": false,
+    "transferInProgress": false,
+    "transferOnHold": false,
+    "matured": false
+  },
+  "subStatus": {
+    "id": 0,
+    "code": "SavingsAccountSubStatusEnum.none",
+    "value": "None",
+    "none": true,
+    "inactive": false,
+    "dormant": false,
+    "escheat": false,
+    "block": false,
+    "blockCredit": false,
+    "blockDebit": false
+  },
+  "timeline": {
+    "submittedOnDate": [
+      2024,
+      3,
+      1
+    ],
+    "submittedByUsername": "mifos",
+    "submittedByFirstname": "App",
+    "submittedByLastname": "Administrator",
+    "approvedOnDate": [
+      2024,
+      3,
+      2
+    ],
+    "approvedByUsername": "mifos",
+    "approvedByFirstname": "App",
+    "approvedByLastname": "Administrator",
+    "activatedOnDate": [
+      2024,
+      3,
+      3
+    ],
+    "activatedByUsername": "mifos",
+    "activatedByFirstname": "App",
+    "activatedByLastname": "Administrator"
+  },
+  "currency": {
+    "code": "USD",
+    "name": "US Dollar",
+    "decimalPlaces": 2,
+    "inMultiplesOf": 0,
+    "displaySymbol": "$",
+    "nameCode": "currency.USD",
+    "displayLabel": "US Dollar ($)"
+  },
+  "nominalAnnualInterestRate": 5.0,
+  "interestCompoundingPeriodType": {
+    "id": 1,
+    "code": "savings.interest.period.savingsCompoundingInterestPeriodType.daily",
+    "value": "Daily"
+  },
+  "interestPostingPeriodType": {
+    "id": 4,
+    "code": "savings.interest.posting.period.savingsPostingInterestPeriodType.monthly",
+    "value": "Monthly"
+  },
+  "interestCalculationType": {
+    "id": 1,
+    "code": "savingsInterestCalculationType.dailybalance",
+    "value": "Daily Balance"
+  },
+  "interestCalculationDaysInYearType": {
+    "id": 365,
+    "code": "savingsInterestCalculationDaysInYearType.days365",
+    "value": "365 Days"
+  },
+  "minRequiredOpeningBalance": 100.0,
+  "withdrawalFeeForTransfers": false,
+  "allowOverdraft": false,
+  "enforceMinRequiredBalance": false,
+  "withHoldTax": false,
+  "lastActiveTransactionDate": [
+    2024,
+    3,
+    3
+  ],
+  "isDormancyTrackingActive": false,
+  "summary": {
+    "currency": {
+      "code": "USD",
+      "name": "US Dollar",
+      "decimalPlaces": 2,
+      "inMultiplesOf": 0,
+      "displaySymbol": "$",
+      "nameCode": "currency.USD",
+      "displayLabel": "US Dollar ($)"
+    },
+    "totalDeposits": 500.0,
+    "totalWithdrawals": 0,
+    "totalInterestEarned": 0,
+    "totalInterestPosted": 0,
+    "accountBalance": 500.0,
+    "totalOverdraftInterestDerived": 0,
+    "interestNotPosted": 0,
+    "availableBalance": 500.0
+  },
+  "transactions": [
+    {
+      "id": 10,
+      "transactionType": {
+        "id": 1,
+        "code": "savingsAccountTransactionType.deposit",
+        "value": "Deposit",
+        "deposit": true,
+        "withdrawal": false,
+        "interestPosting": false,
+        "feeDeduction": false,
+        "initiateTransfer": false,
+        "approveTransfer": false,
+        "withdrawTransfer": false,
+        "rejectTransfer": false,
+        "overdraftInterest": false,
+        "writtenoff": false,
+        "overdraftFee": false,
+        "withholdTax": false,
+        "escheat": false,
+        "amountHold": false,
+        "amountRelease": false
+      },
+      "accountId": 3,
+      "accountNo": "000000003",
+      "date": [
+        2024,
+        3,
+        3
+      ],
+      "currency": {
+        "code": "USD",
+        "name": "US Dollar",
+        "decimalPlaces": 2,
+        "inMultiplesOf": 0,
+        "displaySymbol": "$",
+        "nameCode": "currency.USD",
+        "displayLabel": "US Dollar ($)"
+      },
+      "paymentDetailData": {
+        "id": 1,
+        "paymentType": {
+          "id": 1,
+          "name": "Cash",
+          "isSystemDefined": false
+        },
+        "accountNumber": "",
+        "checkNumber": "",
+        "routingCode": "",
+        "receiptNumber": "",
+        "bankNumber": ""
+      },
+      "amount": 500.0,
+      "runningBalance": 500.0,
+      "reversed": false,
+      "submittedOnDate": [
+        2024,
+        3,
+        3
+      ],
+      "interestedPostedAsOn": false,
+      "submittedByUsername": "mifos",
+      "isManualTransaction": false,
+      "isReversal": false,
+      "lienTransaction": false,
+      "releaseTransactionId": 0
+    }
+  ],
+  "charges": []
+}

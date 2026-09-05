@@ -30,3 +30,40 @@ jobs:
         run: |
           echo "$MIFOS_TEST_SUITE_ID"
           chmod +x ./testRigor/run_testrigor_tests.sh && ./testRigor/run_testrigor_tests.sh
+
+  cypress:
+    name: Cypress e2e (stubbed API)
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: npm
+
+      - name: Npm install
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Run Cypress
+        uses: cypress-io/github-action@v6
+        with:
+          install: false
+          start: python3 -m http.server 4200 --directory dist/web-app
+          wait-on: 'http://localhost:4200'
+          command: npm run cypress:run
+
+      - name: Upload Cypress artifacts
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-artifacts
+          path: |
+            cypress/screenshots
+            cypress/videos
+          if-no-files-found: ignore

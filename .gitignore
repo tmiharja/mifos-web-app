@@ -55,6 +55,8 @@ testem.log
 .DS_Store
 Thumbs.db
 .vscode/
-cypress/
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
 
 src/assets/env.js
