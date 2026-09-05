@@ -1,7 +1,7 @@
 ###############
 ### STAGE 1: Build app
 ###############
-ARG BUILDER_IMAGE=node:22.9.0-alpine
+ARG BUILDER_IMAGE=node:22.12.0-alpine
 ARG NGINX_IMAGE=nginx:1.27.4-alpine3.21-slim
 
 FROM $BUILDER_IMAGE as builder

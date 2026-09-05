@@ -57,6 +57,7 @@ Choose ONE of the following methods to install the web app:
 #### Method 1: Manual Installation
 
 1. Install Node.js: [Download here](https://nodejs.org/en/download/)
+   Supported versions are `^20.19.0 || ^22.12.0 || ^24.0.0` (see `engines` in `package.json`). The pinned version used by CI and Docker is in `.nvmrc`; with [nvm](https://github.com/nvm-sh/nvm) run `nvm install` from the project root to use it.
 2. Install Angular CLI:
    ```
    npm install -g @angular/cli@16.0.2
