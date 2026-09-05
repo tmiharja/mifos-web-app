@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomeComponent } from './home.component';
+import { WarningDialogComponent } from './warning-dialog/warning-dialog.component';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -8,7 +9,10 @@ describe('HomeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [HomeComponent]
+      declarations: [
+        HomeComponent,
+        WarningDialogComponent
+      ]
     }).compileComponents();
   }));
 
@@ -16,6 +20,10 @@ describe('HomeComponent', () => {
     fixture = TestBed.createComponent(HomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
+  });
+
+  afterEach(() => {
+    fixture.destroy();
   });
 
   it('should create', () => {
