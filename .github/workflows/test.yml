@@ -29,4 +29,4 @@ jobs:
       - name: Run testRigor tests
         run: |
           echo "$MIFOS_TEST_SUITE_ID"
-          chmod +x ./e2e/testRigor/run_testrigor_tests.sh && ./e2e/testRigor/run_testrigor_tests.sh
+          chmod +x ./testRigor/run_testrigor_tests.sh && ./testRigor/run_testrigor_tests.sh
