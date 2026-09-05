@@ -2,6 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
+import { lastValueFrom } from 'rxjs';
 
 /** Custom Services */
 import { LoansService } from 'app/loans/loans.service';
@@ -116,12 +117,9 @@ export class ViewTransactionComponent implements OnInit {
 
   ngOnInit(): void {
     if (this.allowChargeback) {
-      this.organizationService
-        .getPaymentTypesWithCode()
-        .toPromise()
-        .then((data) => {
-          this.paymentTypeOptions = data;
-        });
+      lastValueFrom(this.organizationService.getPaymentTypesWithCode()).then((data) => {
+        this.paymentTypeOptions = data;
+      });
     }
   }
 

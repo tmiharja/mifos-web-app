@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
+import { lastValueFrom } from 'rxjs';
 import { Dates } from 'app/core/utils/dates';
 import { LoansService } from 'app/loans/loans.service';
 import { SettingsService } from 'app/settings/settings.service';
@@ -222,11 +223,8 @@ export class LoanTrancheDetailsComponent implements OnInit {
       dateFormat: this.settingsService.dateFormat,
       locale: this.settingsService.language.code
     };
-    this.loanServices
-      .editDisbursements(this.loanId, payload)
-      .toPromise()
-      .then((result) => {
-        this.pristine = true;
-      });
+    lastValueFrom(this.loanServices.editDisbursements(this.loanId, payload)).then((result) => {
+      this.pristine = true;
+    });
   }
 }
