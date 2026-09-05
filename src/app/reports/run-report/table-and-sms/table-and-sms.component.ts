@@ -143,7 +143,7 @@ export class TableAndSmsComponent implements OnChanges {
   exportToXLS(): void {
     const fileName = `${this.dataObject.report.name}.xlsx`;
     const data = this.csvData.map((object: any) => {
-      const row = {};
+      const row: { [key: string]: any } = {};
       for (let i = 0; i < this.displayedColumns.length; i++) {
         row[this.displayedColumns[i]] = object.row[i];
       }

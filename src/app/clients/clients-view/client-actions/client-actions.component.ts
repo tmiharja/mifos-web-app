@@ -13,6 +13,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class ClientActionsComponent {
   /** Flag object to store possible actions and render appropriate UI to the user */
   actions: {
+    [key: string]: boolean;
     'Assign Staff': boolean;
     Close: boolean;
     Reject: boolean;

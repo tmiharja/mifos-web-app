@@ -40,7 +40,10 @@ export class DepositRecurringDepositsAccountComponent implements OnInit {
   action: string;
   actionName: string;
   transactionCommand: string;
-  transactionType: { deposit: boolean; withdrawal: boolean } = { deposit: false, withdrawal: false };
+  transactionType: { [key: string]: boolean; deposit: boolean; withdrawal: boolean } = {
+    deposit: false,
+    withdrawal: false
+  };
 
   /**
    * Retrieves action details transactions template data from `resolve`

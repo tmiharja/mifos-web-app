@@ -1,0 +1,57 @@
+{
+  "id": 1,
+  "accountNo": "000000001",
+  "externalId": "EXT-001",
+  "status": { "id": 300, "code": "clientStatusType.active", "value": "Active" },
+  "subStatus": { "active": false, "mandatory": false },
+  "active": true,
+  "activationDate": [
+    2024,
+    1,
+    15
+  ],
+  "firstname": "Jane",
+  "lastname": "Doe",
+  "displayName": "Jane Doe",
+  "mobileNo": "5551234567",
+  "emailAddress": "jane.doe@example.com",
+  "dateOfBirth": [
+    1990,
+    5,
+    20
+  ],
+  "gender": { "id": 22, "name": "Female", "active": true, "mandatory": false },
+  "clientType": { "id": 25, "name": "Individual", "active": true, "mandatory": false },
+  "clientClassification": { "id": 27, "name": "Regular", "active": true, "mandatory": false },
+  "isStaff": false,
+  "officeId": 1,
+  "officeName": "Head Office",
+  "staffId": 1,
+  "staffName": "Officer, Alice",
+  "timeline": {
+    "submittedOnDate": [
+      2024,
+      1,
+      15
+    ],
+    "submittedByUsername": "mifos",
+    "submittedByFirstname": "App",
+    "submittedByLastname": "Administrator",
+    "activatedOnDate": [
+      2024,
+      1,
+      15
+    ],
+    "activatedByUsername": "mifos",
+    "activatedByFirstname": "App",
+    "activatedByLastname": "Administrator"
+  },
+  "savingsProductName": "Passbook Savings",
+  "legalForm": { "id": 1, "code": "legalFormType.person", "value": "PERSON" },
+  "clientCollateralManagements": [],
+  "groups": [],
+  "clientNonPersonDetails": {
+    "constitution": { "active": false, "mandatory": false },
+    "mainBusinessLine": { "active": false, "mandatory": false }
+  }
+}

@@ -10,6 +10,7 @@ import { Currency } from 'app/shared/models/general.model';
 export class RecurringDepositsAccountActionsComponent {
   /** Flag object to store possible actions and render appropriate UI to the user */
   actions: {
+    [key: string]: boolean;
     Activate: boolean;
     'Undo Activation': boolean;
     'Undo Approval': boolean;

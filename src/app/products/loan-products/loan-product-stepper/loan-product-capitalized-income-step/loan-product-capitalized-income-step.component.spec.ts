@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LoanProductCapitalizedIncomeStepComponent } from './loan-product-capitalsed-income-step.component';
+import { LoanProductCapitalizedIncomeStepComponent } from './loan-product-capitalized-income-step.component';
 
 describe('LoanProductCapitalizedIncomeStepComponent', () => {
   let component: LoanProductCapitalizedIncomeStepComponent;

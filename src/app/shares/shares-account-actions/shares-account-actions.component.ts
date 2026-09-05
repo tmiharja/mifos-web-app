@@ -18,6 +18,7 @@ export class SharesAccountActionsComponent {
   sharesAccountData: any;
   /** Flag object to store possible actions and render appropriate UI to the user */
   actions: {
+    [key: string]: boolean;
     Approve: boolean;
     Reject: boolean;
     Close: boolean;

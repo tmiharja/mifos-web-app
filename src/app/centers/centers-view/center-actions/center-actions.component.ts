@@ -13,6 +13,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class CenterActionsComponent {
   /** Flag object to store possible actions and render appropriate UI to the user */
   actions: {
+    [key: string]: boolean;
     Activate: boolean;
     'Assign Staff': boolean;
     Close: boolean;

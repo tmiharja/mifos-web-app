@@ -1,0 +1,138 @@
+{
+  "clientId": 1,
+  "clientName": "Jane Doe",
+  "productOptions": [
+    {
+      "id": 1,
+      "name": "Passbook Savings"
+    }
+  ],
+  "fieldOfficerOptions": [
+    {
+      "id": 1,
+      "firstname": "Alice",
+      "lastname": "Officer",
+      "displayName": "Officer, Alice",
+      "officeId": 1,
+      "officeName": "Head Office",
+      "isLoanOfficer": true,
+      "isActive": true
+    }
+  ],
+  "timeline": {},
+  "charges": [],
+  "datatables": [],
+  "savingsProductId": 1,
+  "savingsProductName": "Passbook Savings",
+  "currency": {
+    "code": "USD",
+    "name": "US Dollar",
+    "decimalPlaces": 2,
+    "inMultiplesOf": 0,
+    "displaySymbol": "$",
+    "nameCode": "currency.USD",
+    "displayLabel": "US Dollar ($)"
+  },
+  "nominalAnnualInterestRate": 5.0,
+  "interestCompoundingPeriodType": {
+    "id": 1,
+    "code": "savings.interest.period.savingsCompoundingInterestPeriodType.daily",
+    "value": "Daily"
+  },
+  "interestCompoundingPeriodTypeOptions": [
+    {
+      "id": 1,
+      "code": "savings.interest.period.savingsCompoundingInterestPeriodType.daily",
+      "value": "Daily"
+    },
+    {
+      "id": 4,
+      "code": "savings.interest.period.savingsCompoundingInterestPeriodType.monthly",
+      "value": "Monthly"
+    }
+  ],
+  "interestPostingPeriodType": {
+    "id": 4,
+    "code": "savings.interest.posting.period.savingsPostingInterestPeriodType.monthly",
+    "value": "Monthly"
+  },
+  "interestPostingPeriodTypeOptions": [
+    {
+      "id": 4,
+      "code": "savings.interest.posting.period.savingsPostingInterestPeriodType.monthly",
+      "value": "Monthly"
+    },
+    {
+      "id": 5,
+      "code": "savings.interest.posting.period.savingsPostingInterestPeriodType.quarterly",
+      "value": "Quarterly"
+    }
+  ],
+  "interestCalculationType": {
+    "id": 1,
+    "code": "savingsInterestCalculationType.dailybalance",
+    "value": "Daily Balance"
+  },
+  "interestCalculationTypeOptions": [
+    {
+      "id": 1,
+      "code": "savingsInterestCalculationType.dailybalance",
+      "value": "Daily Balance"
+    },
+    {
+      "id": 2,
+      "code": "savingsInterestCalculationType.averagedailybalance",
+      "value": "Average Daily Balance"
+    }
+  ],
+  "interestCalculationDaysInYearType": {
+    "id": 365,
+    "code": "savingsInterestCalculationDaysInYearType.days365",
+    "value": "365 Days"
+  },
+  "interestCalculationDaysInYearTypeOptions": [
+    {
+      "id": 360,
+      "code": "savingsInterestCalculationDaysInYearType.days360",
+      "value": "360 Days"
+    },
+    {
+      "id": 365,
+      "code": "savingsInterestCalculationDaysInYearType.days365",
+      "value": "365 Days"
+    }
+  ],
+  "lockinPeriodFrequencyTypeOptions": [
+    {
+      "id": 0,
+      "code": "savings.lockin.savingsPeriodFrequencyType.days",
+      "value": "Days"
+    },
+    {
+      "id": 1,
+      "code": "savings.lockin.savingsPeriodFrequencyType.weeks",
+      "value": "Weeks"
+    },
+    {
+      "id": 2,
+      "code": "savings.lockin.savingsPeriodFrequencyType.months",
+      "value": "Months"
+    },
+    {
+      "id": 3,
+      "code": "savings.lockin.savingsPeriodFrequencyType.years",
+      "value": "Years"
+    }
+  ],
+  "minRequiredOpeningBalance": 100.0,
+  "withdrawalFeeForTransfers": false,
+  "allowOverdraft": false,
+  "overdraftLimit": 0,
+  "minRequiredBalance": 0,
+  "enforceMinRequiredBalance": false,
+  "minBalanceForInterestCalculation": 0,
+  "minOverdraftForInterestCalculation": 0,
+  "nominalAnnualInterestRateOverdraft": 0,
+  "chargeOptions": [],
+  "withHoldTax": false
+}

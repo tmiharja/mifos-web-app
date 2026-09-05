@@ -2,7 +2,7 @@
 import env from './.env';
 
 // The `window['env']` object is loaded in the `index.html` file
-const loadedEnv = window['env'] || {};
+const loadedEnv: { [key: string]: any } = (window as any)['env'] || {};
 
 export const environment = {
   production: true,
@@ -54,10 +54,10 @@ export const environment = {
     }
   },
 
-  vNextApiUrl: window['env']['vNextApiUrl'] || 'https://apis.mifos.community',
-  vNextApiProvider: window['env']['vNextApiProvider'] || '/vnext1',
-  vNextApiVersion: window['env']['vNextApiVersion'] || '/v1.0',
-  interbankTransfers: window['env']['interbankTransfers'] || false,
+  vNextApiUrl: loadedEnv['vNextApiUrl'] || 'https://apis.mifos.community',
+  vNextApiProvider: loadedEnv['vNextApiProvider'] || '/vnext1',
+  vNextApiVersion: loadedEnv['vNextApiVersion'] || '/v1.0',
+  interbankTransfers: loadedEnv['interbankTransfers'] || false,
 
   minPasswordLength: loadedEnv['minPasswordLength'] || 12
 };

@@ -263,7 +263,7 @@ export class CreateStandingInstructionsComponent implements OnInit {
   /** Refine Object
    * Removes the object param with null or '' values
    */
-  refineObject(dataObj: Object) {
+  refineObject(dataObj: { [key: string]: any }) {
     const propNames = Object.getOwnPropertyNames(dataObj);
     for (let i = 0; i < propNames.length; i++) {
       const propName = propNames[i];

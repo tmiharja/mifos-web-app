@@ -16,10 +16,7 @@ module.exports = [
     languageOptions: {
       parser: tsParser,
       parserOptions: {
-        project: [
-          'tsconfig.json',
-          'e2e/tsconfig.json'
-        ],
+        project: ['tsconfig.json'],
         createDefaultProgram: true
       }
     },

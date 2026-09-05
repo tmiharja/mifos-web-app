@@ -1,0 +1,74 @@
+{
+  "clientId": 1,
+  "clientAccountNo": "000000001",
+  "clientName": "Jane Doe",
+  "clientOfficeId": 1,
+  "loanProductId": null,
+  "externalId": null,
+  "fundId": null,
+  "loanOfficerId": null,
+  "loanPurposeId": null,
+  "timeline": {
+    "submittedOnDate": [
+      2024,
+      2,
+      1
+    ],
+    "expectedDisbursementDate": [
+      2024,
+      2,
+      1
+    ]
+  },
+  "productOptions": [
+    {
+      "id": 1,
+      "name": "Personal Loan",
+      "includeInBorrowerCycle": false,
+      "useBorrowerCycle": false,
+      "isLinkedToFloatingInterestRates": false,
+      "isFloatingInterestRateCalculationAllowed": false,
+      "allowVariableInstallments": false,
+      "isInterestRecalculationEnabled": false,
+      "canDefineInstallmentAmount": false,
+      "holdGuaranteeFunds": false,
+      "accountMovesOutOfNPAOnlyOnArrearsCompletion": false,
+      "allowAttributeOverrides": {},
+      "syncExpectedWithDisbursementDate": false,
+      "isEqualAmortization": false,
+      "canUseForTopup": false,
+      "disallowExpectedDisbursements": false,
+      "allowApprovedDisbursedAmountsOverApplied": false,
+      "enableDownPayment": false,
+      "enableAutoRepaymentForDownPayment": false
+    }
+  ],
+  "loanOfficerOptions": [
+    {
+      "id": 1,
+      "firstname": "Alice",
+      "lastname": "Officer",
+      "displayName": "Officer, Alice",
+      "officeId": 1,
+      "officeName": "Head Office",
+      "isLoanOfficer": true,
+      "isActive": true
+    }
+  ],
+  "loanPurposeOptions": [
+    {
+      "id": 50,
+      "name": "Working capital",
+      "active": true,
+      "mandatory": false
+    }
+  ],
+  "fundOptions": [
+    {
+      "id": 1,
+      "name": "General fund"
+    }
+  ],
+  "accountLinkingOptions": [],
+  "datatables": []
+}

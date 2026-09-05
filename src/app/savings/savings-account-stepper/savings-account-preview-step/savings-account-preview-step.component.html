@@ -33,7 +33,7 @@
   </div>
 
   <ng-container *ngIf="activeClientMembers">
-    <h3 class="mat-h3" fxFlexFill class="margin-t">{{ 'labels.heading.Client Members' | translate }}</h3>
+    <h3 class="mat-h3 margin-t" fxFlexFill>{{ 'labels.heading.Client Members' | translate }}</h3>
     <mat-divider fxFlexFill></mat-divider>
     <div fxFlex="60%">
       <table mat-table #membersTable [dataSource]="dataSource">
@@ -55,7 +55,7 @@
     </div>
   </ng-container>
 
-  <h3 class="mat-h3" fxFlexFill class="margin-t">{{ 'labels.heading.Terms' | translate }}</h3>
+  <h3 class="mat-h3 margin-t" fxFlexFill>{{ 'labels.heading.Terms' | translate }}</h3>
 
   <mat-divider fxFlexFill></mat-divider>
 

@@ -145,7 +145,7 @@ export class RecurringDepositProductInterestRateChartStepComponent implements On
         formArray.push(chartSlabInfo);
 
         // Iterate for every slab in chartSlab
-        const chartIncentiveControl = chartDetailControl.controls['chartSlabs']['controls'][j];
+        const chartIncentiveControl = formArray.controls[j] as UntypedFormGroup;
 
         // Iterate to input all the incentive for particular chart slab
         this.chartsDetail[i].chartSlabs[j].incentives.forEach((chartIncentiveDetail: any) => {
@@ -175,7 +175,7 @@ export class RecurringDepositProductInterestRateChartStepComponent implements On
               Validators.required
             ]
           });
-          const newFormArray = chartIncentiveControl['controls']['incentives'] as UntypedFormArray;
+          const newFormArray = chartIncentiveControl.controls['incentives'] as UntypedFormArray;
           newFormArray.push(incentiveInfo);
         });
       });
@@ -184,7 +184,7 @@ export class RecurringDepositProductInterestRateChartStepComponent implements On
 
   getChartsDetailsData() {
     this.chartDetailData.forEach((chartData: any) => {
-      const chart = {
+      const chart: { [key: string]: any } = {
         endDate: chartData.endDate ? new Date(chartData.endDate) : '',
         fromDate: chartData.fromDate ? new Date(chartData.fromDate) : '',
         isPrimaryGroupingByAmount: chartData.isPrimaryGroupingByAmount,
@@ -212,7 +212,7 @@ export class RecurringDepositProductInterestRateChartStepComponent implements On
     }
 
     chartSlabData.forEach((eachChartSlabData: any) => {
-      const chartSlab = {
+      const chartSlab: { [key: string]: any } = {
         periodType: eachChartSlabData.periodType.id,
         amountRangeFrom: eachChartSlabData.amountRangeFrom,
         amountRangeTo: eachChartSlabData.amountRangeTo,

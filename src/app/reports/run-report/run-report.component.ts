@@ -235,7 +235,7 @@ export class RunReportComponent implements OnInit {
     for (const [
       key,
       value
-    ] of Object.entries(response)) {
+    ] of Object.entries<any>(response)) {
       if (key === 'outputType') {
         formattedResponse['output-type'] = value;
         continue;
@@ -342,7 +342,7 @@ export class RunReportComponent implements OnInit {
   exportToXLS(reportName: string, csvData: any, displayedColumns: string[]): void {
     const fileName = `${reportName}.xlsx`;
     const data = csvData.map((object: any) => {
-      const row = {};
+      const row: { [key: string]: any } = {};
       for (let i = 0; i < displayedColumns.length; i++) {
         row[displayedColumns[i]] = object.row[i];
       }

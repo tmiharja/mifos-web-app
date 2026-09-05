@@ -62,7 +62,7 @@ export class LoansAccountTermsStepComponent implements OnInit, OnChanges {
   /** Client Active Loan Data */
   clientActiveLoanData: any;
   /** Multi Disbursement Data */
-  disbursementDataSource: {}[] = [];
+  disbursementDataSource: { [key: string]: any }[] = [];
   /** Loan repayment strategies */
   transactionProcessingStrategyOptions: any = [];
   repaymentStrategyDisabled = false;

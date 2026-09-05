@@ -32,7 +32,7 @@ export class LoanApprovalComponent {
   /** Row Selection Data */
   selection: SelectionModel<any>;
   /** Map data */
-  idToNodeMap = {};
+  idToNodeMap: { [id: string]: any } = {};
   /** Grouped Office Data */
   officesArray: any[];
   /** List of Requests */
@@ -79,7 +79,7 @@ export class LoanApprovalComponent {
     });
     this.loans.forEach((loanEle: any) => {
       if (loanEle.status.pendingApproval) {
-        let tempOffice = {};
+        let tempOffice: any = {};
         if (loanEle.clientOfficeId) {
           tempOffice = this.idToNodeMap[loanEle.clientOfficeId];
           tempOffice['loans'].push(loanEle);

@@ -1,0 +1,40 @@
+{
+  "type": {
+    "id": 1,
+    "code": "loanTransactionType.disbursement",
+    "value": "Disbursement"
+  },
+  "date": [
+    2024,
+    2,
+    5
+  ],
+  "currency": {
+    "code": "USD",
+    "name": "US Dollar",
+    "decimalPlaces": 2,
+    "inMultiplesOf": 0,
+    "displaySymbol": "$",
+    "nameCode": "currency.USD",
+    "displayLabel": "US Dollar ($)"
+  },
+  "amount": 10000.0,
+  "netDisbursalAmount": 10000.0,
+  "paymentTypeOptions": [
+    {
+      "id": 1,
+      "name": "Cash",
+      "description": "Cash",
+      "isCashPayment": true,
+      "position": 1
+    },
+    {
+      "id": 2,
+      "name": "Bank transfer",
+      "description": "Bank transfer",
+      "isCashPayment": false,
+      "position": 2
+    }
+  ],
+  "manuallyReversed": false
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "reportName": "Client Listing",
+    "reportType": "Table",
+    "reportCategory": "Client",
+    "description": "Individual Client Report",
+    "coreReport": true,
+    "useReport": true,
+    "reportParameters": []
+  },
+  {
+    "id": 2,
+    "reportName": "Loan Summary",
+    "reportType": "Table",
+    "reportCategory": "Loan",
+    "description": "Loan summary",
+    "coreReport": true,
+    "useReport": true,
+    "reportParameters": []
+  },
+  {
+    "id": 3,
+    "reportName": "Client Trends",
+    "reportType": "Chart",
+    "reportCategory": "Client",
+    "description": "Chart",
+    "coreReport": true,
+    "useReport": true,
+    "reportParameters": []
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "id": 3,
+  "accountNo": "000000003",
+  "clientId": 1,
+  "clientName": "Jane Doe",
+  "currency": {
+    "code": "USD",
+    "name": "US Dollar",
+    "decimalPlaces": 2,
+    "inMultiplesOf": 0,
+    "displaySymbol": "$",
+    "nameCode": "currency.USD",
+    "displayLabel": "US Dollar ($)"
+  },
+  "date": [
+    2024,
+    3,
+    3
+  ],
+  "reversed": false,
+  "paymentTypeOptions": [
+    {
+      "id": 1,
+      "name": "Cash",
+      "isSystemDefined": false
+    },
+    {
+      "id": 2,
+      "name": "Cheque",
+      "isSystemDefined": false
+    }
+  ]
+}

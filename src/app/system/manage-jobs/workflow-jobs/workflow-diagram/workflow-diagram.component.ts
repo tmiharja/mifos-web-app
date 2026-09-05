@@ -35,7 +35,7 @@ export class WorkflowDiagramComponent implements OnInit {
       '#C7B42C'
     ]
   };
-  center$ = new Subject<any>();
+  center$ = new Subject<boolean>();
 
   constructor() {}
 
@@ -70,7 +70,7 @@ export class WorkflowDiagramComponent implements OnInit {
       nodeCounter++;
     }
     // trigger center
-    this.center$.next();
+    this.center$.next(true);
   }
 
   public getStyles(node: Node): any {

@@ -1,6 +1,6 @@
 /** Angular Imports  */
 import { Component, OnInit } from '@angular/core';
-import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
+import { UntypedFormArray, UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import * as _ from 'lodash';
@@ -44,9 +44,7 @@ export class ViewRoleComponent implements OnInit {
   /** Creates Backup form */
   backupform: UntypedFormGroup;
   /** Temporarily stores Permission data */
-  tempPermissionUIData: {
-    permissions: { code: string }[];
-  }[];
+  tempPermissionUIData: { [grouping: string]: { permissions: any[] } };
   /** Stores permissions */
   permissions: {
     permissions: { code: string; id: number }[];
@@ -121,11 +119,7 @@ export class ViewRoleComponent implements OnInit {
    * Groups the permissions based on rules
    */
   groupRules() {
-    this.tempPermissionUIData = [
-      {
-        permissions: []
-      }
-    ];
+    this.tempPermissionUIData = {};
     for (const i in this.rolePermissionService.permissionUsageData) {
       if (this.rolePermissionService.permissionUsageData[i]) {
         if (this.rolePermissionService.permissionUsageData[i].grouping !== this.currentGrouping) {
@@ -220,7 +214,7 @@ export class ViewRoleComponent implements OnInit {
    */
   submit() {
     const value = this.formGroup.get('roster').value;
-    const data = {};
+    const data: { [code: string]: boolean } = {};
     const permissionData = {
       permissions: {}
     };
@@ -239,7 +233,7 @@ export class ViewRoleComponent implements OnInit {
    */
   selectAll() {
     for (let i = 0; i < this.permissions.permissions.length; i++) {
-      this.formGroup.controls.roster['controls'][this.permissions.permissions[i].id].patchValue({
+      (this.formGroup.controls.roster as UntypedFormArray).controls[this.permissions.permissions[i].id].patchValue({
         selected: true
       });
     }
@@ -250,7 +244,7 @@ export class ViewRoleComponent implements OnInit {
    */
   deselectAll() {
     for (let i = 0; i < this.permissions.permissions.length; i++) {
-      this.formGroup.controls.roster['controls'][this.permissions.permissions[i].id].patchValue({
+      (this.formGroup.controls.roster as UntypedFormArray).controls[this.permissions.permissions[i].id].patchValue({
         selected: false
       });
     }

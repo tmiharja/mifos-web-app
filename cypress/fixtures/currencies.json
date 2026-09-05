@@ -1,0 +1,24 @@
+{
+  "selectedCurrencyOptions": [
+    {
+      "code": "USD",
+      "name": "US Dollar",
+      "decimalPlaces": 2,
+      "inMultiplesOf": 0,
+      "displaySymbol": "$",
+      "nameCode": "currency.USD",
+      "displayLabel": "US Dollar ($)"
+    }
+  ],
+  "currencyOptions": [
+    {
+      "code": "USD",
+      "name": "US Dollar",
+      "decimalPlaces": 2,
+      "inMultiplesOf": 0,
+      "displaySymbol": "$",
+      "nameCode": "currency.USD",
+      "displayLabel": "US Dollar ($)"
+    }
+  ]
+}

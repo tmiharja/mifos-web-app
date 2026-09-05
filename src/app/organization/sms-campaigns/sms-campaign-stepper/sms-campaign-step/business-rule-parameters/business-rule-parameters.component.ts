@@ -153,7 +153,7 @@ export class BusinessRuleParametersComponent implements OnInit, OnChanges {
     for (const [
       key,
       value
-    ] of Object.entries(response)) {
+    ] of Object.entries<any>(response)) {
       const param: ReportParameter = this.paramData.find((_entry: any) => _entry.name === key);
       newKey = forHeaders ? param.inputName : param.variable;
       switch (param.displayType) {

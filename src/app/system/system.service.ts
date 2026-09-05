@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 
 /** rxjs Imports */
-import { Observable } from 'rxjs';
+import { Observable, lastValueFrom } from 'rxjs';
 import { RunJobWithParamPayloadType } from './manage-jobs/scheduler-jobs/custom-parameters-popover/custom-parameters-popover.component';
 
 /**
@@ -338,7 +338,9 @@ export class SystemService {
    * @returns {Observable<any>}
    */
   runSelectedJob(jobId: string): Promise<any> {
-    return this.http.post(`/jobs/${jobId}?command=executeJob`, this.emptyPayload, { observe: 'response' }).toPromise();
+    return lastValueFrom(
+      this.http.post(`/jobs/${jobId}?command=executeJob`, this.emptyPayload, { observe: 'response' })
+    );
   }
 
   /**
@@ -346,7 +348,7 @@ export class SystemService {
    * @returns {Observable<any>}
    */
   runSelectedJobWithParameters(jobId: string, jobParameters: RunJobWithParamPayloadType): Promise<any> {
-    return this.http.post(`/jobs/${jobId}?command=executeJob`, jobParameters, { observe: 'response' }).toPromise();
+    return lastValueFrom(this.http.post(`/jobs/${jobId}?command=executeJob`, jobParameters, { observe: 'response' }));
   }
 
   /*

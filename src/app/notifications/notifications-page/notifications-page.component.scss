@@ -1,3 +1,9 @@
 .select-row:hover {
   cursor: pointer;
 }
+
+.no-data-cell {
+  text-align: center;
+  padding: 16px;
+  color: #999;
+}
