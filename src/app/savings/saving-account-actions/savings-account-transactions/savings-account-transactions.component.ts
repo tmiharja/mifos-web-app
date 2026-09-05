@@ -35,7 +35,10 @@ export class SavingsAccountTransactionsComponent implements OnInit {
   /** Flag to enable payment details fields. */
   addPaymentDetailsFlag: Boolean = false;
   /** transaction type flag to render required UI */
-  transactionType: { deposit: boolean; withdrawal: boolean } = { deposit: false, withdrawal: false };
+  transactionType: { [key: string]: boolean; deposit: boolean; withdrawal: boolean } = {
+    deposit: false,
+    withdrawal: false
+  };
   /** transaction command for submit request */
   transactionCommand: string;
   /** saving account's Id */

@@ -72,7 +72,7 @@ export class TakeSurveyComponent {
 
   // TODO: document the function
   groupBy(array: any, func: any) {
-    const groups = {};
+    const groups: { [key: string]: any[] } = {};
     array.forEach((ele: any) => {
       const group = JSON.stringify(func(ele));
       groups[group] = groups[group] || [];

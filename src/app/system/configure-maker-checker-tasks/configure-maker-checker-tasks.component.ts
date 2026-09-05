@@ -29,9 +29,7 @@ export class ConfigureMakerCheckerTasksComponent implements OnInit, AfterViewIni
   permissions: {
     permissions: { code: string; id: number }[];
   };
-  tempPermissionUIData: {
-    permissions: { code: string }[];
-  }[];
+  tempPermissionUIData: { [grouping: string]: { permissions: any[] } };
 
   /* Reference of edit button */
   @ViewChild('buttonEdit') buttonEdit: ElementRef<any>;
@@ -96,11 +94,7 @@ export class ConfigureMakerCheckerTasksComponent implements OnInit, AfterViewIni
   }
 
   setMakerCheckerTask() {
-    this.tempPermissionUIData = [
-      {
-        permissions: []
-      }
-    ];
+    this.tempPermissionUIData = {};
     for (const i in this.permissionsData) {
       if (this.permissionsData[i]) {
         if (this.permissionsData[i].grouping !== this.currentGrouping) {
@@ -177,7 +171,7 @@ export class ConfigureMakerCheckerTasksComponent implements OnInit, AfterViewIni
 
   submit() {
     const value = this.formGroup.get('roster').value;
-    const data = {};
+    const data: { [code: string]: boolean } = {};
     const permissionData = {
       permissions: {}
     };

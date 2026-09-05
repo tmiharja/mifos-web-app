@@ -13,6 +13,7 @@ import { ActivatedRoute } from '@angular/router';
 export class FixedDepositsAccountActionsComponent {
   /** Flag object to store possible actions and render appropriate UI to the user */
   actions: {
+    [key: string]: boolean;
     Approve: boolean;
     Reject: boolean;
     Activate: boolean;

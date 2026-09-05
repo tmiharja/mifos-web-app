@@ -85,7 +85,7 @@ export class LoansAccountDatatableStepComponent implements OnInit {
   get payload(): any {
     const dateFormat = this.settingsService.dateFormat;
     const datatableDataValues = this.datatableForm.value;
-    const data = {
+    const data: { [key: string]: any } = {
       locale: this.settingsService.language.code
     };
     let existDate = false;

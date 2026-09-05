@@ -7,7 +7,7 @@
 import env from './.env';
 
 // The `window['env']` object is loaded in the `index.html` file
-const loadedEnv = window['env'] || {};
+const loadedEnv: { [key: string]: any } = (window as any)['env'] || {};
 
 export const environment = {
   production: false,

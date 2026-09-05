@@ -14,6 +14,7 @@ import { Currency } from 'app/shared/models/general.model';
 export class SavingAccountActionsComponent {
   /** Flag object to store possible actions and render appropriate UI to the user */
   actions: {
+    [key: string]: boolean;
     Approve: boolean;
     Reject: boolean;
     Withdrawal: boolean;

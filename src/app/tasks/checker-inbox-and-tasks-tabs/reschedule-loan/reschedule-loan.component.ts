@@ -107,7 +107,7 @@ export class RescheduleLoanComponent {
     const dateFormat = this.settingsService.dateFormat;
     const transactionDate = this.dateUtils.formatDate(this.settingsService.businessDate, dateFormat);
     const locale = this.settingsService.language.code;
-    const formData = {
+    const formData: { [key: string]: any } = {
       dateFormat,
       locale
     };

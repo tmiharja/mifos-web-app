@@ -27,6 +27,7 @@ export class ManageSavingsAccountComponent implements OnInit {
   reasonOptions: any = [];
 
   transactionType: {
+    [key: string]: boolean;
     holdamount: boolean;
     blockaccount: boolean;
     blockdeposit: boolean;
@@ -130,7 +131,7 @@ export class ManageSavingsAccountComponent implements OnInit {
 
   submit() {
     let command = '';
-    let payload = {};
+    let payload: { [key: string]: any } = {};
 
     if (this.transactionType.holdamount) {
       const manageSavingsAccountFormData = this.manageSavingsAccountForm.value;
