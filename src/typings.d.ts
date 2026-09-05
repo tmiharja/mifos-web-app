@@ -11,8 +11,6 @@ interface NodeModule {
   id: string;
 }
 
-declare module 'chart.js';
-
 declare module '@ckeditor/ckeditor5-build-classic' {
   const ClassicEditorBuild: any;
 

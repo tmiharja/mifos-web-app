@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
 import { HomeService } from '../../home.service';
 
 /** Charting Imports */
-import Chart from 'chart.js';
+import { Chart } from 'chart.js/auto';
 
 /**
  * Amount Disbursed Pie Chart Component
@@ -23,7 +23,7 @@ export class AmountDisbursedPieComponent implements OnInit {
   /** Office Data */
   officeData: any;
   /** Chart.js chart */
-  chart: any;
+  chart: Chart;
   /** Substitute for resolver */
   hideOutput = true;
   /** Shows fallback element */
