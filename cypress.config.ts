@@ -6,6 +6,7 @@ export default defineConfig({
   fixturesFolder: 'cypress/fixtures',
   viewportWidth: 1280,
   viewportHeight: 900,
+  scrollBehavior: 'center',
 
   e2e: {
     // We've imported your old cypress plugins here.
