@@ -4,6 +4,8 @@ export default defineConfig({
   videosFolder: 'cypress/videos',
   screenshotsFolder: 'cypress/screenshots',
   fixturesFolder: 'cypress/fixtures',
+  viewportWidth: 1280,
+  viewportHeight: 900,
 
   e2e: {
     // We've imported your old cypress plugins here.

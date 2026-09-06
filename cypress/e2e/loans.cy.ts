@@ -116,7 +116,7 @@ describe('Loans', () => {
     cy.visitAuthenticated(`${loanUrl}/general`);
     cy.contains('Approved');
     cy.get('button[aria-label="Loan account actions"]').click();
-    cy.get('.mat-menu-panel').contains('button', 'Disburse').scrollIntoView().click();
+    cy.get('.mat-menu-panel').contains('button', 'Disburse').click();
     cy.url().should('include', `${loanUrl}/actions/Disburse`);
 
     cy.get('mifosx-input-amount input').should('have.value', '$10,000.00');
