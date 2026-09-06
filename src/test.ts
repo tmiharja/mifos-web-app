@@ -1,9 +1,8 @@
 /*
  * Prepare environment for unit tests.
- * This file is required by karma.conf.js and loads recursively all the .spec and framework files.
+ * This file is required by karma.conf.js; spec discovery and zone.js/testing are handled by the CLI.
  */
 
-import 'zone.js/dist/zone-testing';
 import { NgModule } from '@angular/core';
 import { DatePipe, DecimalPipe } from '@angular/common';
 import { CdkStepper } from '@angular/cdk/stepper';
@@ -24,8 +23,6 @@ import { AuthenticationService } from './app/core/authentication/authentication.
 import { AuthenticationInterceptor } from './app/core/authentication/authentication.interceptor';
 import { HttpCacheService } from './app/core/http/http-cache.service';
 import { ProgressBarService } from './app/core/progress-bar/progress-bar.service';
-
-declare const require: any;
 
 /** Fake logged-in super user so permission-guarded templates render. */
 sessionStorage.setItem(
@@ -108,7 +105,3 @@ getTestBed().initTestEnvironment(
   ],
   platformBrowserDynamicTesting()
 );
-// Then we find all the tests.
-const context = require.context('./', true, /\.spec\.ts$/);
-// And load the modules.
-context.keys().map(context);
