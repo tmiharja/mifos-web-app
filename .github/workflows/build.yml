@@ -2,11 +2,11 @@ name: build-run
 
 # Controls when the action will run.
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
+  # Triggers the workflow on push to main and on pull requests into main or the Angular 21 integration branch
   push:
     branches: [main]
   pull_request:
-    branches: [main]
+    branches: [main, feature/angular-21]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
